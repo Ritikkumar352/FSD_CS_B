@@ -18,7 +18,8 @@ loginBtn.addEventListener("click", function (event) {
   }
 
   if (userId.value.trim() != "admin" || password.value.trim() != "admin") {
-    alert("Username or Password is not correct")
+    alert("Username or Password is incorrect")
+    isValid=false;
   }
 
   if (!isValid) {
